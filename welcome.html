@@ -1,18 +1,446 @@
-<!DOCTYPE html> 
+
+<!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xush kelibsiz</title>
-    <link rel="stylesheet" href="welcome.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Tabiat Qo'ynida Sayohat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="
+    style.css">
 </head>
+
 <body>
-    <div class="container">     
-        <div class="wrapper">
-            <h1>Xush kelibsiz!</h1>     
-            <p>Bu sayt orqali sayohat qilish uchun eng yaxshi imkoniyatlarga ega bo'lasiz.</p>
-            <a href="index.html" class="btn">Davom etish</a>
+    <div class="container">
+
+        <div class="site-header">
+            <h1><i class="fa-solid fa-leaf"></i> TABIAT QO'YNIDA</h1>
+            <p><i class="fa-brands fa-avianex"></i> chiroyli manzaralar · sarguzashtlar · nafis tabiat</p>
         </div>
+
+        <div class="welcome-bubble">
+            <i class="fa-solid fa-plane"></i> Tabiat qo'ynida sayohatga xush kelibsiz! Har bir sahifa — yangi kashfiyot.
+        </div>
+
+        <div class="nav-tabs">
+            <a href="#welcome-page" class="nav-tab"><i class="fa-solid fa-layer-group"></i> Bosh sahifa</a>
+            <a href="#destinations-page" class="nav-tab"><i class="fa-solid fa-dollar-sign"></i> Manzillar & Narxlar</a>
+            <a href="#booking-page" class="nav-tab"><i class="fa-solid fa-calendar-check"></i> Band qilish</a>
+            <a href="#gallery-page" class="nav-tab"><i class="fa-solid fa-tree"></i> Tabiat galereyasi</a>
+        </div>
+
+        <!-- BOSH SAHIFA -->
+        <div id="welcome-page" class="page">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-house"></i> Mashhur sayohatlar</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Quyida <strong>Dubay</strong> va
+                    <strong>Shvetsiya</strong>ning eng chiroyli manzaralari keltirilgan.</p>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80"
+                    alt="Dubay">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-earth-americas"></i> Dubay — "Cho'l durdonalari"</span>
+                        <span class="price">4 990 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Dubay — zamonaviy arxitektura va an'anaviy arab madaniyati uyg'unlashgan shahar.
+                    </div>
+                    <ul class="info-list">
+                        <li>Burj Khalifa (828m) — eng baland minora</li>
+                        <li>Palm Jumeirah — dunyoning 8-mo'jizasi</li>
+                        <li>Sahro safarida tuya minish, milliy raqslar</li>
+                        <li>Dubay savdo markazlari va oltin bozori</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Dubayning quyosh botishidagi manzarasi
+                        sehrli!" — <em>Madina K.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=800&q=80"
+                    alt="Shvetsiya">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-earth-americas"></i> Shvetsiya — "Skandinaviya ertagi"</span>
+                        <span class="price">5 490 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Shvetsiya — toza havo, minglab ko'llar, zich o'rmonlar va shimoliy chiroqlar
+                        mamlakati.</div>
+                    <ul class="info-list">
+                        <li>Shimoliy chiroqlar (Abisko)</li>
+                        <li>100 000 dan ortiq ko'llar va orollar</li>
+                        <li>13-asrga oid qasrlar va vikinglar merosi</li>
+                        <li>Qishda husky safari va muz mehmonxonalar</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Shimoliy chiroqlar orzu qilingandek
+                        go'zal!" — <em>Jasur N.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80"
+                    alt="Shveytsariya">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-earth-americas"></i> Shveytsariya tog'lari</span>
+                        <span class="price">5 000 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Shveytsariya — Alp tog'lari tizmasida joylashgan, dunyodagi eng boy va barqaror
+                        davlat.</div>
+                    <ul class="info-list">
+                        <li>To'rtta rasmiy til: Nemis, fransuz, italyan, romansh</li>
+                        <li>Innovatsiya yetakchisi davlat</li>
+                        <li>Shokolad iste'moli bo'yicha dunyoda 1-o'rinda</li>
+                        <li>1815-yildan beri betaraf davlat</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Alp tog'lari rasmga olingan otkritkalardan
+                        ham go'zalroq."</div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=800&q=80"
+                    alt="Turkiya">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-earth-asia"></i> Turkiya — "Istanbul sehrlari"</span>
+                        <span class="price">4 200 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Turkiya — Sharq va G'arbning uyg'unlashgan maskani. Istanbulning tarixiy
+                        go'zalliklari, Kapadokiyaning sehrli balonlari.</div>
+                    <ul class="info-list">
+                        <li>Ayasofya va Sultonahmet masjidi</li>
+                        <li>Kapadokiya — yer yuzidagi eng go'zal manzara</li>
+                        <li>Balonli sayohat — unutilmas tajriba</li>
+                        <li>Moviy masjid va Topkapi saroyi</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Kapadokiyadagi balonlar hayotimdagi eng
+                        go'zal lahza!" — <em>Sevara M.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80"
+                    alt="Maldiv">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-water"></i> Maldiv orollari — "Jannat bo'lagi"</span>
+                        <span class="price">9 990 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Maldiv orollari — dunyodagi eng chiroyli plyajlar, tiniq suvlar va hashamatli
+                        kurortlar.</div>
+                    <ul class="info-list">
+                        <li>Suv ustidagi villalar</li>
+                        <li>Shnorkeling va diving</li>
+                        <li>26 atoll va 1000+ orol</li>
+                        <li>Quyosh botishida delfinlarni kuzatish</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Suv ustidagi villada uyg'onish — haqiqatga
+                        aylandi!" — <em>Kamola R.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80"
+                    alt="Yaponiya">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-tree"></i> Yaponiya — "Sakura va an'analar"</span>
+                        <span class="price">8 500 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Yaponiya — zamonaviy texnologiyalar va qadimiy an'analar uyg'unligi. Tokio, Kioto,
+                        Fudzi tog'i.</div>
+                    <ul class="info-list">
+                        <li>Kioto — 1000+ qadimiy ibodatxonalar</li>
+                        <li>Fudzi tog'i — Yaponiyaning ramzi</li>
+                        <li>Tokio — eng zamonaviy metropol</li>
+                        <li>Sakura fasli — mart-aprel oylarida</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Yaponiya — boshqa sayyora!" — <em>Diyor
+                            B.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&q=80"
+                    alt="Italiya">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-landmark"></i> Italiya — "Renessans vatani"</span>
+                        <span class="price">6 800 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Italiya — tarix, san'at va taomlarning uyg'unligi. Rim, Venetsiya, Florensiya.
+                    </div>
+                    <ul class="info-list">
+                        <li>Kolizey — dunyoning 7 mo'jizasidan biri</li>
+                        <li>Venetsiya — kanallar shahri, gondol sayohati</li>
+                        <li>Florensiya — Renessans beshigi</li>
+                        <li>Piza minorasi</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Venetsiyadagi gondol sayohati unutilmas!" —
+                        <em>Shoxista A.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <img class="card-img" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80"
+                    alt="Bali">
+                <div class="card-content">
+                    <div class="card-title">
+                        <span><i class="fa-solid fa-umbrella-beach"></i> Indoneziya (Bali) — "Xudolar oroli"</span>
+                        <span class="price">7 200 000 so'm / kishi</span>
+                    </div>
+                    <div class="desc">Bali — yashil o'rmonlar, terasli guruch maydonlari, qadimiy ibodatxonalar va eng
+                        chiroyli plyajlar.</div>
+                    <ul class="info-list">
+                        <li>Uluwatu ibodatxonasi</li>
+                        <li>Tegallalang terasli maydonlari</li>
+                        <li>Yoga va spa</li>
+                        <li>Kuta va Seminyak plyajlari</li>
+                    </ul>
+                    <div class="review-text"><strong>Sayyoh izohi:</strong> "Bali — bu jannat! Albatta qaytaman!" —
+                        <em>Muhammadjon S.</em></div>
+                    <a href="#booking-page" class="book-btn">Band qilish</a>
+                </div>
+            </div>
+
+            <div class="travel-tip">
+                <div><i class="fa-solid fa-users"></i> <strong>Maslahat:</strong> Sayohat kundaligini rasmli qilib
+                     boring!</div>
+            </div>
+
+            <div class="travel-card" style="margin-bottom: 2rem;">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-comments"></i> Foydalanuvchi sharhlari</h2>
+                    <p>Bizning sayohatchilarimizdan ilhom oling!</p>
+                </div>
+                <div class="testimonial-list">
+                    <div class="testimonial">
+                        <div class="testimonial-text">“Bu sayohat hayotimdagi eng yaxshi tajriba bo‘ldi!”</div>
+                        <div class="testimonial-author">— <strong>Aziza T.</strong></div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-text">“Tabiat qo‘ynida dam olish — haqiqiy oromgoh!”</div>
+                        <div class="testimonial-author">— <strong>Rustam Q.</strong></div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-text">“Xizmat va narxlar juda ma’qul keldi, yana kelaman!”</div>
+                        <div class="testimonial-author">— <strong>Malika S.</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="destinations-page" class="page">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-house"></i> Boshqa sayohat manzillari</h2>
+                <p><i class="fa-solid fa-cloud"></i> Yana 4 ajoyib tabiat maskani</p>
+            </div>
+            <div class="card-grid">
+                <div class="travel-card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80"
+                        alt="Sirdaryo">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span><i class="fa-solid fa-umbrella"></i> Sirdaryo bo'ylari</span>
+                            <span class="price">550 000 so'm</span>
+                        </div>
+                        <div class="desc">Ekotur, qushlarni kuzatish, daryo bo'yida estetik eskizlar. 1 kunlik piknik.
+                        </div>
+                        <ul class="info-list">
+                            <li>Qayiqda sayr qilish</li>
+                            <li>Baliq ovlash ustaxonasi</li>
+                            <li>O'tin yoqib choy ichish</li>
+                        </ul>
+                        <a href="#booking-page" class="book-btn">Band qilish</a>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+                        alt="Chimyon">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span><i class="fa-solid fa-mountain"></i> Chimyon tog'lari</span>
+                            <span class="price">720 000 so'm</span>
+                        </div>
+                        <div class="desc">Afsonaviy go'zal vodiylar, otda sayr, kechki o'tin yonida hikoyalar.</div>
+                        <ul class="info-list">
+                            <li>Otda 2 soatlik sayohat</li>
+                            <li>Tog' cho'qqisida quyosh chiqishi</li>
+                            <li>Milliy taomlar master-klassi</li>
+                        </ul>
+                        <a href="#booking-page" class="book-btn">Band qilish</a>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&q=80"
+                        alt="Moviy ko'l">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span><i class="fa-solid fa-bridge"></i> Moviy ko'l</span>
+                            <span class="price">850 000 so'm</span>
+                        </div>
+                        <div class="desc">Kemping, qayiqda sayr, yulduzlar ostidagi kecha. Ikki kunlik dastur.</div>
+                        <ul class="info-list">
+                            <li>Palatkada tunash</li>
+                            <li>Teleskop bilan yulduzlarni kuzatish</li>
+                            <li>Sketch workshop</li>
+                        </ul>
+                        <a href="#booking-page" class="book-btn">Band qilish</a>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <img class="card-img"
+                        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKyNlygHEwhlpiHHBRqv7rq2fpWgRv-aMsA&sa"
+                        alt="Lola dalalari">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <span><i class="fa-solid fa-spa"></i> Lola dalalari</span>
+                            <span class="price">480 000 so'm</span>
+                        </div>
+                        <div class="desc">Bahorgi romantika, gullar orasida sayr, milliy taomlar va foto sessiya.</div>
+                        <ul class="info-list">
+                            <li>Professional suratga olish</li>
+                            <li>Gulli dalada piknik</li>
+                            <li>Quritilgan lola sovg'a</li>
+                        </ul>
+                        <a href="#booking-page" class="book-btn">Band qilish</a>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-tip" style="margin-top: 2rem;">
+                <div><i class="fa-solid fa-envelope-open"></i> <strong>Maxsus taklif:</strong> 2 yoki undan ortiq
+                    sayohatni band qilsangiz, 10% chegirma!</div>
+            </div>
+        </div>
+
+        <!-- BAND QILISH -->
+        <div id="booking-page" class="page">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-star"></i> Sayohatni band qilish</h2>
+                <p>Quyidagi shaklni to'ldiring, biz siz bilan bog'lanamiz!</p>
+            </div>
+            <div class="booking-form">
+                <div class="form-group">
+                    <label><i class="fa-solid fa-address-card"></i> Ismingiz</label>
+                    <input type="text" placeholder="Masalan: Aziz" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-envelope"></i> Email</label>
+                    <input type="email" placeholder="aziz@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-phone"></i> Telefon raqam</label>
+                    <input type="tel" placeholder="+998 90 123 45 67" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-file"></i> Sayohatni tanlang</label>
+                    <select>
+                        <option>🇦🇪 Dubay — 4 990 000 so'm</option>
+                        <option>🇸🇪 Shvetsiya — 5 490 000 so'm</option>
+                        <option>🇨🇭 Shveytsariya — 5 000 000 so'm</option>
+                        <option>🇹🇷 Turkiya — 4 200 000 so'm</option>
+                        <option>🌊 Maldiv — 9 990 000 so'm</option>
+                        <option>🇯🇵 Yaponiya — 8 500 000 so'm</option>
+                        <option>🇮🇹 Italiya — 6 800 000 so'm</option>
+                        <option>🇮🇩 Bali (Indoneziya) — 7 200 000 so'm</option>
+                        <option>🌊 Sirdaryo bo'ylari — 550 000 so'm</option>
+                        <option>⛰️ Chimyon tog'lari — 720 000 so'm</option>
+                        <option>💧 Moviy ko'l — 850 000 so'm</option>
+                        <option>🌷 Lola dalalari — 480 000 so'm</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-database"></i> Sayohat sanasi</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-users"></i> Sayohatchilar soni</label>
+                    <input type="number" min="1" max="20" value="2">
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-comment"></i> Izoh yoki maxsus talablar</label>
+                    <textarea rows="3" placeholder="Shu yerga izoh yozasiz..."></textarea>
+                </div>
+                <a href="index1.html">
+                    <button class="book-btn" style="width:100%; font-size:1.1rem; padding: 0.9rem;">
+                        <i class="fa-solid fa-paper-plane"></i> Sayohatni band qilish
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- GALEREYA -->
+        <div id="gallery-page" class="page">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-images"></i> Tabiat galereyasi</h2>
+                <p>Tabiatning sehrli onlari.</p>
+            </div>
+            <div class="gallery-grid" style="margin: 2rem 0;">
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80"
+                        alt="Quyosh botishi" loading="lazy">
+                    <p><i class="fa-solid fa-tree"></i> Quyosh botishi</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=400&q=80" alt="Tog' ko'li"
+                        loading="lazy">
+                    <p><i class="fa-solid fa-mountain"></i> Tog' ko'li</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" alt="Cho'qqilar"
+                        loading="lazy">
+                    <p><i class="fa-solid fa-mountain"></i> Qorli cho'qqilar</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&q=80" alt="Sharshara"
+                        loading="lazy">
+                    <p><i class="fa-solid fa-water"></i> Sharshara vodiy</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80" alt="Yaylov"
+                        loading="lazy">
+                    <p><i class="fa-solid fa-snowflake"></i> Yaylov va gullar</p>
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-img"
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="Sohil"
+                        loading="lazy">
+                    <p><i class="fa-solid fa-water"></i> Sokin sohil</p>
+                </div>
+            </div>
+            <div class="travel-tip">
+                <div><i class="fa-solid fa-image"></i> <strong>Eslatma:</strong> Har bir rasm — tabiatdan olingan
+                    haqiqiy kadrlar!</div>
+            </div>
+        </div>
+
+        <footer>
+            <p><i class="fa-solid fa-tree"></i> Tabiat qo'ynida sayohat | Dubay · Shvetsiya · Turkiya · Maldiv ·
+                Yaponiya · Italiya · Bali</p>
+            <p style="margin-top: 0.5rem;">Barcha narxlar indikativ | Sayohatlaringiz yorug' bo'lsin 🌿</p>
+        </footer>
+
     </div>
 </body>
+
 </html>
