@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.success-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 60 50px gray;
+    text-align: center;
+    max-width: 400px;
+}
+
+.check-icon {
+    font-size: 50px;
+    color: white;
+    background: #28a745;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #D52B1E;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-link:hover{
+    color: #81261f;
+}
