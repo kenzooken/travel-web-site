@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyslar jadvali</title> <link rel="stylesheet" href="airport.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="artifacts-component-root-html">
+
+    <div class="navbar">
+        <h1><i class="fa-solid fa-plane"></i> Tabiat Qo'ynida</h1>
+        <a href="welcome.html">← Bosh sahifa</a>
+    </div>
+
+    <div class="hero">
+        <h2><i class="fa-solid fa-plane"></i> Reyslar Jadvali</h2>
+        <p>Toshkentdan barcha yo'nalishlardagi reyslarni ko'ring</p>
+    </div>
+
+    <div class="search-box">
+        <h3><i class="fa-solid fa-search"></i> Reys qidirish</h3>
+        <div class="search-row">
+            <select>
+                <option selected disabled>Qayerdan?</option>
+                <option>🇺🇿 Toshkent (TAS)</option>
+                <option>🇦🇪 Dubai (DXB)</option>
+                <option>🇹🇷 Istanbul (IST)</option>
+                <option>🇷🇺 Moskva (SVO)</option>
+            </select>
+            <select>
+                <option selected disabled>Qayerga?</option>
+                <option>🇦🇪 Dubai (DXB)</option>
+                <option>🇹🇷 Istanbul (IST)</option>
+                <option>🇯🇵 Tokyo (NRT)</option>
+                <option>🇩🇪 Berlin (BER)</option>
+                <option>🇮🇹 Rim (FCO)</option>
+                <option>🇲🇻 Maldiv (MLE)</option>
+                <option>🇷🇺 Moskva (SVO)</option>
+            </select>
+            <input type="date" value="2026-05-05">
+            <button class="search-btn">Qidirish</button>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="number">24</div>
+            <div class="label">Bugungi reyslar</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">18</div>
+            <div class="label">Vaqtida uchadi</div>
+        </div>
+        <div class="stat-card">
+            <div class="number">12</div>
+            <div class="label">Yo'nalishlar</div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <h3><i class="fa-solid fa-plane"></i> Jo'nab ketish reyslar — 5 May 2026</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aviakompaniya</th>
+                    <th>Yo'nalish</th>
+                    <th>Vaqt</th>
+                    <th>Reys raqami</th>
+                    <th>O'rindiqlar</th>
+                    <th>Narx</th>
+                    <th>Holati</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="airline-name">Uzbekistan Airways</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>DXB</span>
+                        </div>
+                        <div class="duration">4s 30d • To'g'ridan 🇦🇪</div>
+                    </td>
+                    <td>06:15 → 08:45</td>
+                    <td>HY 101</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:60%;background:#27ae60;"></div>
+                            </div>
+                            <div class="seats-text">47 joy mavjud</div>
+                        </div>
+                    </td>
+                    <td><span class="price">4 990 000 so'm</span></td>
+                    <td><span class="badge badge-green"><i class="fa-solid fa-check"></i> Vaqtida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">Turkish Airlines</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>IST</span>
+                        </div>
+                        <div class="duration">5s 15d • To'g'ridan 🇹🇷</div>
+                    </td>
+                    <td>09:30 → 12:45</td>
+                    <td>TK 329</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:88%;background:#f39c12;"></div>
+                            </div>
+                            <div class="seats-text">12 joy qoldi</div>
+                        </div>
+                    </td>
+                    <td><span class="price">4 200 000 so'm</span></td>
+                    <td><span class="badge badge-blue"><i class="fa-solid fa-clock"></i> Посадка</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">Uzbekistan Airways</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>NRT</span>
+                        </div>
+                        <div class="duration">11s 20d • 1 to'xtalish 🇯🇵</div>
+                    </td>
+                    <td>11:00 → 22:20</td>
+                    <td>HY 207</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:30%;background:#27ae60;"></div>
+                            </div>
+                            <div class="seats-text">89 joy mavjud</div>
+                        </div>
+                    </td>
+                    <td><span class="price">8 500 000 so'm</span></td>
+                    <td><span class="badge badge-green"><i class="fa-solid fa-check"></i> Vaqtida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">flydubai</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>DXB</span>
+                        </div>
+                        <div class="duration">3s 50d • To'g'ridan 🇦🇪</div>
+                    </td>
+                    <td>13:45 → 15:35</td>
+                    <td>FZ 991</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:97%;background:#e74c3c;"></div>
+                            </div>
+                            <div class="seats-text">3 joy qoldi!</div>
+                        </div>
+                    </td>
+                    <td><span class="price">3 800 000 so'm</span></td>
+                    <td><span class="badge badge-yellow">⚠ 20d kechikish</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">Uzbekistan Airways</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>FCO</span>
+                        </div>
+                        <div class="duration">7s 40d • To'g'ridan 🇮🇹</div>
+                    </td>
+                    <td>15:20 → 19:00</td>
+                    <td>HY 503</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:45%;background:#27ae60;"></div>
+                            </div>
+                            <div class="seats-text">55 joy mavjud</div>
+                        </div>
+                    </td>
+                    <td><span class="price">6 800 000 so'm</span></td>
+                    <td><span class="badge badge-green"><i class="fa-solid fa-check"></i> Vaqtida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">Uzbekistan Airways</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>MLE</span>
+                        </div>
+                        <div class="duration">14s 30d • 1 to'xtalish 🇲🇻</div>
+                    </td>
+                    <td>17:50 → 08:20+1</td>
+                    <td>HY 615</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:20%;background:#27ae60;"></div>
+                            </div>
+                            <div class="seats-text">102 joy mavjud</div>
+                        </div>
+                    </td>
+                    <td><span class="price">9 990 000 so'm</span></td>
+                    <td><span class="badge badge-green"><i class="fa-solid fa-check"></i> Vaqtida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">Turkish Airlines</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>BER</span>
+                        </div>
+                        <div class="duration">8s 00d • To'g'ridan 🇩🇪</div>
+                    </td>
+                    <td>20:10 → 04:10+1</td>
+                    <td>TK 779</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:93%;background:#f39c12;"></div>
+                            </div>
+                            <div class="seats-text">8 joy qoldi</div>
+                        </div>
+                    </td>
+                    <td><span class="price">7 200 000 so'm</span></td>
+                    <td><span class="badge badge-green"><i class="fa-solid fa-check"></i> Vaqtida</span></td>
+                </tr>
+                <tr>
+                    <td><span class="airline-name">S7 Airlines</span></td>
+                    <td>
+                        <div class="route">
+                            <span>TAS</span>
+                            <span class="arrow">→</span>
+                            <span>SVO</span>
+                        </div>
+                        <div class="duration">3s 10d • To'g'ridan 🇷🇺</div>
+                    </td>
+                    <td>22:55 → 02:05+1</td>
+                    <td>S7 805</td>
+                    <td>
+                        <div class="seats-bar-wrap">
+                            <div class="seats-bar">
+                                <div class="seats-fill" style="width:100%;background:#e74c3c;"></div>
+                            </div>
+                            <div class="seats-text">Joy yo'q</div>
+                        </div>
+                    </td>
+                    <td><span class="price">5 490 000 so'm</span></td>
+                    <td><span class="badge badge-red"><i class="fa-solid fa-times"></i> Bekor qilindi</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p> 2026 Tabiat Qo'ynida Sayohat |</p>
+    </footer>
+
+
+
+</body>
+
+</html>
