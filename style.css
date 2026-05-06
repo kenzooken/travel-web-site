@@ -79,6 +79,81 @@
             padding-bottom: 1rem;
             border-bottom: 2px dashed #9bc4ab;
         }
+
+
+        .hero-banner {
+            position: relative;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, #e8f5ee 60%, #ffecd2 100%);
+            background-size: 200% 200%;
+            animation: heroGradient 8s ease-in-out infinite alternate;
+            z-index: 1;
+        }
+        @keyframes heroGradient {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .hero-banner h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            background: linear-gradient(135deg, #1a4731, #ff9f4a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.7rem;
+        }
+        .hero-desc {
+            font-size: 1.2rem;
+            color: #2c5a3e;
+            background: #fff9e8;
+            display: inline-block;
+            padding: 0.45rem 1.6rem;
+            border-radius: 40px;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ffd9a0;
+        }
+        .hero-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9f4a, #ff6b1a);
+            color: white;
+            font-weight: 800;
+            padding: 0.8rem 2.1rem;
+            border-radius: 60px;
+            text-decoration: none;
+            margin-top: 1.2rem;
+            transition: 0.2s;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(255,107,26,0.18);
+            cursor: pointer;
+            border: none;
+        }
+        .hero-btn:hover {
+            background: linear-gradient(135deg, #ffb06a, #ff7c30);
+            transform: translateY(-2px) scale(1.04);
+        }
+
+        .animated-scroll {        }
+        @keyframes scrollFadeIn {
+            0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        
         .nav-tab {
             background: #fdf8ed;
             border: 2px solid #3e7b5c;
@@ -92,9 +167,40 @@
         }
         .nav-tab:hover {
             background: #ffe3b5;
-            border-color: #ff914d;
-            transform: translateY(-2px);
         }
+
+            a {
+                color: #1a4731;
+                text-decoration: none;
+                font-weight: 600;
+                transition: color 0.18s, box-shadow 0.18s, background 0.18s;
+                border-radius: 8px;
+                padding: 2px 6px;
+                position: relative;
+            }
+            a:focus {
+                outline: 2px solid #ff9f4a;
+                outline-offset: 2px;
+            }
+            a:hover, a:active {
+                color: #ff6b1a;
+                background: #fff5e0;
+                
+            }
+            a::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                transition: width 0.25s cubic-bezier(.4,2,.6,1);
+                border-radius: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            a:hover::after, a:active::after {
+                width: 100%;
+            }
 
         .page { display: none; animation: fadeIn 0.4s ease; }
         #welcome-page:target,
@@ -178,7 +284,6 @@
         }
         .info-list li { margin: 0.3rem 0; }
 
-/* Testimonial (foydalanuvchi sharhlari) bo‘limi */
 .testimonial-section {
     background: linear-gradient(90deg, #e8f5ee 60%, #fff0e0 100%);
     border-radius: 24px;

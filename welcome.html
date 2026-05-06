@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Tabiat Qo'ynida Sayohat</title>
+    <title>Sayohat Go!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap"
@@ -18,21 +18,28 @@
 <body>
     <div class="container">     
 
-        <div class="site-header">
-            <h1><i class="fa-solid fa-leaf"></i> TABIAT QO'YNIDA</h1>
-            <p><i class="fa-brands fa-avianex"></i> chiroyli manzaralar · sarguzashtlar · nafis tabiat</p>
-        </div>
 
-        <div class="welcome-bubble">
-            <i class="fa-solid fa-plane"></i> Tabiat qo'ynida sayohatga xush kelibsiz! Har bir sahifa — yangi kashfiyot.
-        </div>
+        <!-- HERO BANNER -->
+        <header class="hero-banner">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1><i class="fa-solid fa-leaf"></i> SAYOHAT GO!</h1>
+                <p class="hero-desc"><i class="fa-brands fa-avianex"></i> chiroyli manzaralar · sarguzashtlar · nafis tabiat</p>
+                <a href="#destinations-page" class="hero-btn">Sayohatni boshlash <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </header>
 
-        <div class="nav-tabs">
+        <nav class="nav-tabs sticky-nav">
             <a href="#welcome-page" class="nav-tab"><i class="fa-solid fa-layer-group"></i> Bosh sahifa</a>
             <a href="#destinations-page" class="nav-tab"><i class="fa-solid fa-dollar-sign"></i> Manzillar & Narxlar</a>
             <a href="#booking-page" class="nav-tab"><i class="fa-solid fa-calendar-check"></i> Band qilish</a>
             <a href="#gallery-page" class="nav-tab"><i class="fa-solid fa-tree"></i> Tabiat galereyasi</a>
             <a href="airport.html" class="nav-tab"><i class="fa-solid fa-plane"></i> Reyslar Jadvali</a>
+            <a href="profil.html" class="nav-tab"><i class="fa-solid fa-user"></i> Profil</a>
+        </nav>
+
+        <div class="welcome-bubble animated-scroll">
+            <i class="fa-solid fa-plane"></i> Sayohat Go! ga xush kelibsiz! Har bir sahifa — yangi kashfiyot.
         </div>
 
         <!-- BOSH SAHIFA -->
@@ -436,9 +443,8 @@
         </div>
 
         <footer>
-            <p><i class="fa-solid fa-tree"></i> Tabiat qo'ynida sayohat | Dubay · Shvetsiya · Turkiya · Maldiv ·
-                Yaponiya · Italiya · Bali</p>
-            <p style="margin-top: 0.5rem;">Barcha narxlar indikativ | Sayohatlaringiz yorug' bo'lsin 🌿</p>
+            <p><i class="fa-solid fa-tree"></i> &copy; 2023 Sayohat Go!</p>
+            <p style="margin-top: 0.5rem;">Barcha narxlar indikativ | Sayohatlaringiz yorug' bo'lsin </p>
         </footer>
 
     </div>
