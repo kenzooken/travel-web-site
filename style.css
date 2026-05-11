@@ -101,7 +101,6 @@ body {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, #e8f5ee 60%, #ffecd2 100%);
     background-size: 200% 200%;
     animation: heroGradient 8s ease-in-out infinite alternate;
     z-index: 1;
