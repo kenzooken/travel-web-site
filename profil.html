@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do'stmuxammad Nurmato'v</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="profil.css">
 </head>
-
 <body>
 
-    <a href="welcome.html" class="back">
-        orqaga qaytish
-    </a>
+<a href="welcome.html" class="back">← orqaga qaytish</a>
 
-    <div class="card">
-
-        <div class="left">
-            <div class="avatar-box">
-                <div class="avatar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAUj2aXn4XZLV703G5UhvYrrnxgCA5L7QHlw&s"
-                        alt="">
-                </div>
-                <div class="online"><span class="dot"></span>online</div>
+<!-- PROFILE CARD -->
+<div class="card">
+    <div class="left">
+        <div class="avatar-box">
+            <div class="avatar">
+                <img src="photo_2026-05-13_14-00-43.jpg" alt="Do'stmuxammad">
             </div>
+            <div class="online"><span class="dot"></span>online</div>
         </div>
-
-        <div class="right">
-            <p class="tag">Web Developer</p>
-            <h1 class="name">Do'stmuxammad<br>Nurmato'v</h1>
-            <p class="role">PDP Junior · 6 oy tajriba</p>
-
-            <div class="divider"></div>
-
-            <p class="bio">
-                Assalomu alaykum! Men Do'stmuxammad, hozirda PDP juniorda web dasturlash o'rganayapman.
-                Kelajakda foydalanuvchilarga qulay va samarali ilovalar yaratishni maqsad qilganman.
-            </p>
-
-            <div class="skills">
-                <span class="chip">HTML</span>
-                <span class="chip">CSS</span>
-                <span class="chip">Responsive</span>
-                <span class="chip">Git</span>
-            </div>
-
-            <div class="socials">
-                <a class="s-btn tg" href="https://t.me/imthebestone01" target="_blank" title="Telegram">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
-                <a class="s-btn gh" href="https://github.com/kenzooken" target="_blank" title="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a class="s-btn em" href="mailto:noteamakk@gmail.com" title="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
+    </div>
+    <div class="right">
+        <p class="tag">Web Developer</p>
+        <h1 class="name">Do'stmuxammad<br>Nurmato'v</h1>
+        <p class="role">PDP Junior · 6 oy tajriba</p>
+        <div class="divider"></div>
+        <p class="bio">
+            Assalomu alaykum! Men Do'stmuxammad, hozirda PDP juniorda web dasturlash o'rganayapman.
+            Kelajakda foydalanuvchilarga qulay va samarali ilovalar yaratishni maqsad qilganman.
+        </p>
+        <div class="skills">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Responsive</span>
+            <span class="chip">Git</span>
         </div>
+        <div class="socials">
+            <a class="s-btn tg" href="https://t.me/imthebestone01" target="_blank" title="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a class="s-btn gh" href="https://github.com/kenzooken" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a class="s-btn em" href="mailto:noteamakk@gmail.com" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</div>
 
+<!-- PROJECTS -->
+<div class="projects-section">
+
+    <div class="projects-heading">
+        <span class="projects-heading-text">Loyihalarim</span>
+        <div class="projects-heading-line"></div>
     </div>
 
-</body>
+    <!-- Project 1 -->
+    <div class="project-card">
+        <div class="project-iframe-wrap">
+            <iframe src="https://forma-2-hj4x.vercel.app/" title="Forma 2" loading="lazy" allowfullscreen></iframe>
+            <a class="iframe-overlay" href="https://forma-2-hj4x.vercel.app/" target="_blank" aria-label="Forma 2 ni ochish"></a>
+        </div>
+        <div class="project-info">
+            <div class="project-meta">
+                <div class="project-name">Forma 2</div>
+                <div class="project-desc">HTML · CSS · Responsive forma loyihasi</div>
+            </div>
+            <a class="project-btn" href="https://forma-2-hj4x.vercel.app/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ochish
+            </a>
+        </div>
+    </div>
 
+    <!-- Project 2 -->
+    <div class="project-card">
+        <div class="project-iframe-wrap">
+            <iframe src="https://travel-web-site-original.vercel.app/" title="Travel Web" loading="lazy" allowfullscreen></iframe>
+            <a class="iframe-overlay" href="https://travel-web-site-original.vercel.app/" target="_blank" aria-label="Travel Web ni ochish"></a>
+        </div>
+        <div class="project-info">
+            <div class="project-meta">
+                <div class="project-name">Travel Web</div>
+                <div class="project-desc">Sayohat mavzusidagi to'liq veb-sayt</div>
+            </div>
+            <a class="project-btn" href="https://travel-web-site-original.vercel.app/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ochish
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
